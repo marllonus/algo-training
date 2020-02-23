@@ -16,6 +16,6 @@ public:
 
 public:
     template < typename T, template <typename, typename...> class Container>
-    void Selection(Container<T>& vec);
+    static void Selection(Container<T>& vec);
 };
 
