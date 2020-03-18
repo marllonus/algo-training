@@ -2,7 +2,6 @@
 
 #include "../algo.h"
 
-// why is this code working?
 class algo::Sort
 {
 private:
@@ -16,6 +15,15 @@ public:
 
 public:
     template < typename T, template <typename, typename...> class Container>
-    static void Selection(Container<T>& vec);
+    static void Selection(Container<T>& ctn);
+
+    template < typename T, template <typename, typename...> class Container>
+    static void Bubble(Container<T>& ctn);
+
+    template < typename T, template <typename, typename...> class Container>
+    static void Insertion(Container<T>& ctn);
+
+    template < typename T, template <typename, typename...> class Container>
+    static void Merge(Container<T>& ctn);
 };
 
